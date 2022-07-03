@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <title>Sign Up</title>
+    <!-- googlr font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS stylesheets -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/82043ddd51.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+
+
+
+<style>
+    
+    #top{
+        background-color:rgb(251, 110, 110, 90%) !important;
+        
+    }
+    body{
+        background-color:#fff;
+    }
+    .btn{
+        background-color: rgb(251, 110, 110); margin-top: 5%;
+    }
+    .btn:hover{
+        background-color: black;
+        color: white;
+        border-radius: 2px solid white;
+    }
+
+
+    label > b {
+        color: red;
+    }
+</style>
+</head>
+<body>
+<!--<div class="container-fluid bg-dark ">-->
+<!--   <center><img src="media/SS%20(1).png" alt="" class="rounded" style="height: 200px; width: 95%"></center>-->
+<!--</div>-->
+
+<nav id="top" class="navbar navbar-expand-md navbar-light sticky-top ">
+
+    <a href="#" class="navbar-brand"><img src="" style="height: 20px;" alt=""></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mymenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mymenu">
+        <ul class="navbar-nav nav">
+            <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#">Gallery</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown" >Services</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item text-dark" href="#">Submenu1</a>
+                    <a class="dropdown-item text-dark" href="#">Submenu2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-dark" href="#">Submenu3</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link text-light" href="#">Team</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#">Contact us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"  data-toggle="modal" data-target="#loginForm">Login  <i class="fas fa-sign-in-alt"></i> </a></li>
+        </ul>
+    </div>
+
+</nav>
+<div class="container">
+    <div class="modal" id="loginForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>User Login</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group form-row">
+                            <label for="username" class="col-sm-4">Username</label>
+                            <div class="col-sm-8">
+                                <input type="text" name="username" id="username" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="form-group form-row">
+                            <label for="password" class="col-sm-4">Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" name="password" id="password" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="form-group form-row">
+                            <div class="col-sm-8 offset-sm-4">
+                                <input type="submit" value="Login" class="btn btn-primary">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span style="cursor: pointer" class="close" data-dismiss="modal">close</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        <form action="">
+        <h2> Signup Form</h2>
+        <div class="row">
+            <div class="col-sm-6 ">
+
+
+                <div class="form-group">
+                    <label for="username">Username <b>*</b></label>
+                    <input type="text" required name="username" id="username" class="form-control">
+                </div>
+                <div class="form-group form-row">
+                    <div class="col-sm-6">
+                        <label for="password">Password <b>*</b></label>
+                        <input type="password" required name="password" id="password" class="form-control">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="confirmpassword">Confirm Password <b>*</b></label>
+                        <input type="password" required name="confirmpassword" id="confirmpassword"
+                               class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <b>*</b></label>
+                    <input type="email" required name="email" id="email" class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <label>Hobbies</label>
+                    <div>
+                        <input type="checkbox" name="hobbies[]" id="tv"> <label for="tv">TV</label>
+                        <input type="checkbox" name="hobbies[]" id="Cricket"> <label for="Cricket">Cricket</label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="mobileno">Mobile</label>
+                    <input type="text" required name="mobileno" id="mobileno" class="form-control">
+
+                </div>
+                <div class="form-group form-row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+
+                            <label for="photo">Photo</label>
+                            <input type="file" name="photo" id="photo" class="form-control-file">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div>
+                                <input type="radio" name="gender" id="male" value="Male"> <label for="male">Male</label>
+                                <input type="radio" checked name="gender" id="female" value="Female"> <label
+                                    for="female">Female</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select name="country" id="country" class="form-control">
+                        <option value="">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Pakistan">Pakistan</option>
+                    </select>
+                </div>
+
+                <div class="form-group"s>
+                    <input type="submit" value="Submit" id="btn" class="btn btn-lg" >
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script src="js/jquery.min.js"></script>
+<script src="main.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="main.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>-->
+</body>
+</html>
